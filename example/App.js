@@ -32,11 +32,10 @@ const SignInScreen = ({ navigation }) => {
   const [loginSuccess, setLoginSuccess] = useState(false);
   const [azureLoginObject, setAzureLoginObject] = useState({});
   const credentials = {
-    client_id: "cbfd2433-6712-4e6a-9f77-38b8696fcf34",
-    client_secret: CLIENT_SECRET_KEY,
-    redirect_uri: "http://localhost:3000",
-    scope:
-      "User.ReadBasic.All User.Read.All User.ReadWrite.All Mail.Read offline_access",
+    client_id: "b3e40eb2-f050-4e0e-a13a-b88bf37c9094",
+    client_secret: "e1b4f593-3419-4676-ac52-f2b8c7a484db",
+    redirect_uri: "",
+    scope:"User.Read User.ReadBasic.All Mail.Read ",
   };
   const azureInstance = new AzureInstance(credentials);
 
